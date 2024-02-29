@@ -1,6 +1,5 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld msg="Приветствую, пользователь!"/>
 </template>
 
 <script>
@@ -10,11 +9,19 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  methods: {
+    handleClick() {
+      alert('Button clicked in HelloWorld component!');
+    }
   }
 }
 </script>
 
 <style>
+body {
+  background-color: #808080; /* Более темный серый цвет */
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
