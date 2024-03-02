@@ -1,3 +1,4 @@
+<!-- Второй файл -->
 <template>
   <HelloWorld msg="Приветствую, пользователь!"/>
 </template>
@@ -20,14 +21,14 @@ export default {
 
 <style>
 body {
-  background-color: #808080; /* Более темный серый цвет */
+  background-color: #808080;
 }
 #app {
+  background-color: #808080;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
