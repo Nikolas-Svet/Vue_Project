@@ -13,7 +13,8 @@
           <h2 class="size_default">Информация о языках программирования и фреймворках:</h2>
           <ul class="size_default">
             <li class="size_default" v-for="(item, index) in info" :key="index">
-              <strong>Язык программирования:</strong> {{ item['Language prog'] }}, <strong>Фреймворк:</strong> {{ item.Framework }}
+              <strong>Язык программирования:</strong> {{ item['Language prog'] }}, <strong>Фреймворк:</strong>
+              {{ item.Framework }}
             </li>
           </ul>
         </div>
@@ -22,7 +23,7 @@
     <img src="../assets/Логотип_КемГУ.png" alt="logo" class="logo">
     <footer class="footer_">
       <a class="footer_a">Обратная связь со мной:</a>
-      <a  class="footer_a" href="https://vk.com/nik.svetkin">VK</a>
+      <a class="footer_a" href="https://vk.com/nik.svetkin">VK</a>
       <a class="footer_a">nikitaswetckin@mail.ru</a>
       <a class="footer_a">Telegram: @Nikolas_Svet</a>
     </footer>
@@ -40,8 +41,8 @@ export default {
       flag_info: false, // Переменная для управления отображением информации
       info: {}, // Пустой объект для хранения данных с сервера
       info_pers_info: "Меня зовут Светкин Никита Евгеньечи. " +
-        "Являюсь студентом второго курса. Учусь на направлении \"Фундаментальная информатика и информационные технологии\"" +
-        " в группе ФИТ-221. Я оформил данные, которые будут браться с сервера в форме ознакомления. Там перечислены навыки," +
+          "Являюсь студентом второго курса. Учусь на направлении \"Фундаментальная информатика и информационные технологии\"" +
+          " в группе ФИТ-221. Я оформил данные, которые будут браться с сервера в форме ознакомления. Там перечислены навыки," +
           "которые я успел освоить",
     };
   },
@@ -94,15 +95,15 @@ a {
 }
 
 button {
-    margin: 15px 0 0 0 ;
-    background-color: #333;
-    color: white;
-    border: 1px solid black;
-    width: 100px;
-    height: 50px;
-    border-radius: 5px; /* Добавление закругленных углов */
-    font-size: 16px; /* Установка размера шрифта */
-    cursor: pointer; /* Изменение курсора при наведении */
+  margin: 15px 0 0 0;
+  background-color: #333;
+  color: white;
+  border: 1px solid black;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px; /* Добавление закругленных углов */
+  font-size: 16px; /* Установка размера шрифта */
+  cursor: pointer; /* Изменение курсора при наведении */
 }
 
 
@@ -117,16 +118,16 @@ button {
 }
 
 .size_default {
-  margin: 15px 0 0 0 ;
+  margin: 15px 0 0 0;
   font-size: 25px;
 }
 
 .container {
-  width: 1000px; /* Ширина контейнера */
-  margin: 0 auto; /* Центрирование контейнера по горизонтали */
-  padding: 20px; /* Поля вокруг текста */
-  box-sizing: border-box; /* Учитываем ширину границы в общей ширине контейнера */
-  text-align: center; /* Выравнивание текста по центру */
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .footer_ {
